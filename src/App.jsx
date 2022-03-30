@@ -1,24 +1,24 @@
 import React from "react";
+import Layout from "./Components/Layout";
+import NavBar from "./Components/NavBar";
+import SideBar from "./Components/SideBar";
+import Content from "./Components/Content";
 import Batch from "./Batch";
+import "./style.css";
+
 class App extends React.Component {
-  state = {
-    version: 18,
-  };
-
-  handleIncreaseVersion = () => {
-    this.setState({
-      ...this.state,
-      version: this.state.version + 1,
-    });
-  };
-
   render() {
     return (
       <>
-        <h1 onClick={this.handleIncreaseVersion}>
-          React {this.state.version} BoilerPlate
-        </h1>
-        <Batch />
+        <Layout>
+          <NavBar />
+          <main className="main">
+            <SideBar />
+            <Content>
+              <Batch />
+            </Content>
+          </main>
+        </Layout>
       </>
     );
   }

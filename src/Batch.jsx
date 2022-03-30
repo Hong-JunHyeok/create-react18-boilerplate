@@ -2,6 +2,7 @@ import React from "react";
 import { flushSync } from "react-dom";
 
 const modes = { BATCH: "BATCH", FLUSH: "FLUSH" };
+
 const Batch = () => {
   const [mode, setMode] = React.useState(modes.BATCH);
   const [number, setNumber] = React.useState(0);
@@ -43,6 +44,7 @@ const Batch = () => {
 
   return (
     <>
+      <h1>새로운 기능: 자동 일괄처리</h1>
       <table border="1">
         <thead>
           <tr>

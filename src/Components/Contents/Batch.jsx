@@ -44,7 +44,7 @@ const Batch = () => {
 
   return (
     <>
-      <h1>새로운 기능: 자동 일괄처리</h1>
+      <h1>🆕 새로운 기능: 자동 일괄처리</h1>
       <table border="1">
         <thead>
           <tr>

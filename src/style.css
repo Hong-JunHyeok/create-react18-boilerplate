@@ -18,6 +18,20 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.title > h1 {
+  padding-left: 1rem;
+}
+.title > h1 > a {
+  text-decoration: none;
+  color: var(--main-pr-color);
+}
+
+.title:hover {
+  color: white;
 }
 
 .main {
@@ -40,7 +54,6 @@ body {
   height: 4rem;
   padding: 0.5rem 1rem;
   background-color: var(--main-bg-color);
-  color: var(--main-pr-color);
 }
 
 .nav_bar > .title {

@@ -1,5 +1,5 @@
 import React from "react";
-
+import Batch from "./Batch";
 class App extends React.Component {
   state = {
     version: 18,
@@ -14,9 +14,12 @@ class App extends React.Component {
 
   render() {
     return (
-      <h1 onClick={this.handleIncreaseVersion}>
-        React {this.state.version} BoilerPlate
-      </h1>
+      <>
+        <h1 onClick={this.handleIncreaseVersion}>
+          React {this.state.version} BoilerPlate
+        </h1>
+        <Batch />
+      </>
     );
   }
 }

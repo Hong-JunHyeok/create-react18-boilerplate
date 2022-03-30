@@ -2,7 +2,8 @@
   "name": "react18-boilerplate",
   "packageManager": "yarn@3.1.0",
   "scripts": {
-    "start": "webpack"
+    "build": "webpack",
+    "dev": "webpack serve"
   },
   "dependencies": {
     "react": "^18.0.0",

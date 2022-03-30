@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
+import NavItem from "./NavItem";
 
 const SideBar = () => {
   return (
     <section className="side_bar">
       <ul>
         <li>
-          <Link to="batch">Batch</Link>
+          <NavItem to="batch">Batch</NavItem>
         </li>
         <li>
-          <Link to="suspense">Suspense</Link>
+          <NavItem to="suspense">Suspense</NavItem>
         </li>
       </ul>
     </section>

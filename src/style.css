@@ -2,8 +2,13 @@
   --main-bg-color: #20232a;
   --main-pr-color: #61dafb;
   --main-bg-gray: #f2f2f2;
-
+  
+  --content-text-color: #282c34
   --content-size: 1200px;
+  
+  --content-font-size-small: 12px;
+  --content-font-size-middle: 16px;
+  --content-font-size-big: 24px;
 }
 
 html,
@@ -66,6 +71,32 @@ body {
   height: 100%;
   background-color: var(--main-bg-gray);
   overflow-y: auto;
+}
+
+.side_bar > ul {
+  list-style: none;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: var(--content-text-color);
+  font-size: var(--content-font-size-middle);
+  line-height: 30px;
+}
+
+.activated {
+  font-weight: bold;
+}
+
+.activated::before {
+  content: "";
+  width: 4px;
+  height: 24px;
+  border-right: 4px solid var(--main-pr-color);
+  padding-left: 16px;
+  position: absolute;
+  left: 0;
+  /* margin-top: -3px; */
 }
 
 .content {

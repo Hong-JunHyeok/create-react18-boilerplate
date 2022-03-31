@@ -7,7 +7,8 @@ import NavBar from "./Components/NavBar";
 import SideBar from "./Components/SideBar";
 import Content from "./Components/Content";
 
-import Batch from "./Components/Contents/Batch";
+import BatchContent from "./Components/Contents/BatchContent";
+import SuspenseContent from "./Components/Contents/SuspenseContent";
 import Welcome from "./Components/Contents/Welcome";
 
 class App extends React.Component {
@@ -21,8 +22,8 @@ class App extends React.Component {
             <Content>
               <Routes>
                 <Route path="" element={<Welcome />} />
-                <Route path="batch" element={<Batch />} />
-                <Route path="suspense" element={<>Suspense</>} />
+                <Route path="batch" element={<BatchContent />} />
+                <Route path="suspense" element={<SuspenseContent />} />
                 <Route path="*" element={<>Not Found</>} />
               </Routes>
             </Content>

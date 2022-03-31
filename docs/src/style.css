@@ -101,6 +101,7 @@ body {
 .content {
   flex-wrap: wrap;
   word-break: break-all;
+  width: var(--content-size);
   min-width: var(--content-size);
   margin: 0 auto;
   padding: 1rem;

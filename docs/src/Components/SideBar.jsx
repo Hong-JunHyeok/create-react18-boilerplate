@@ -16,6 +16,9 @@ const SideBar = () => {
         <li>
           <NavItem to="transition">Transition</NavItem>
         </li>
+        <li>
+          <NavItem to="working">🚧 작업중...</NavItem>
+        </li>
       </ul>
     </section>
   );

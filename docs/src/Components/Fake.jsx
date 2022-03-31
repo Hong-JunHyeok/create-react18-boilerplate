@@ -7,7 +7,9 @@ const Fake = () => {
 
   return (
     <>
-      <h1>Component was successfully loaded</h1>
+      <h3 className="suspense_block success">
+        Component was successfully loaded
+      </h3>
     </>
   );
 };

@@ -58,7 +58,7 @@ const BatchContent = () => {
         </div>
         <div className="body">
           <div className="value">{number}</div>
-          <div className="value">{flag ? "true" : "false"}</div>
+          <div className="value">{flag ? "True" : "False"}</div>
         </div>
       </div>
 

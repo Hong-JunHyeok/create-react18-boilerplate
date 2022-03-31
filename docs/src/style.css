@@ -2,10 +2,11 @@
   --main-bg-color: #20232a;
   --main-pr-color: #61dafb;
   --main-bg-gray: #f2f2f2;
-  
-  --content-text-color: #282c34
-  --content-size: 1200px;
-  
+
+  --content-text-color: #282c34;
+  --content-size: 800px;
+  --sidebar-size: 400px;
+
   --content-font-size-small: 12px;
   --content-font-size-middle: 16px;
   --content-font-size-big: 24px;
@@ -43,7 +44,6 @@ body {
   margin: 0 auto;
   padding-top: 5rem;
   display: flex;
-  width: var(--content-size);
   height: calc(100vh - 5rem);
   justify-content: center;
 }
@@ -62,12 +62,11 @@ body {
 }
 
 .nav_bar > .title {
-  width: var(--content-size);
   margin: 0 auto;
 }
 
 .side_bar {
-  flex: 1;
+  min-width: var(--sidebar-size);
   height: 100%;
   background-color: var(--main-bg-gray);
   overflow-y: auto;
@@ -96,11 +95,27 @@ body {
   padding-left: 16px;
   position: absolute;
   left: 0;
-  /* margin-top: -3px; */
 }
 
 .content {
-  padding: 1rem 0 0 1rem;
-  flex: 2;
+  width: var(--content-size);
+  min-width: var(--content-size);
+  margin: 0 auto;
+  padding: 1rem;
   overflow-y: auto;
+}
+
+.post_title {
+  margin: 0.67em 0;
+  color: #282c34;
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 65px;
+  font-weight: 700;
+}
+
+.post_subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  color: #6d6d6d;
 }

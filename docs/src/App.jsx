@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./style.css";
 
@@ -14,7 +14,7 @@ import Welcome from "./Components/Contents/Welcome";
 class App extends React.Component {
   render() {
     return (
-      <>
+      <Suspense fallback={<>Loading...</>}>
         <Layout>
           <NavBar />
           <main className="main">
@@ -29,7 +29,7 @@ class App extends React.Component {
             </Content>
           </main>
         </Layout>
-      </>
+      </Suspense>
     );
   }
 }

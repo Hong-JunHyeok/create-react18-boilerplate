@@ -5130,9 +5130,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react18-boilerplate@workspace:.":
+"react18-boilerplate-docs@workspace:.":
   version: 0.0.0-use.local
-  resolution: "react18-boilerplate@workspace:."
+  resolution: "react18-boilerplate-docs@workspace:."
   dependencies:
     "@babel/core": ^7.17.8
     "@babel/plugin-proposal-class-properties": ^7.16.7

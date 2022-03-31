@@ -1,3 +1,5 @@
+## 보일러 플레이트 템플릿은 `master`브랜치 내에 boiler_plate 폴더를 사용하시면 됩니다.
+
 # 달라진 React18
 
 - 더 이상 ReactDOM.render메서드는 사용되지 않습니다.

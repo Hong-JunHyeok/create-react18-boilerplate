@@ -1,5 +1,6 @@
 import React from "react";
 import { flushSync } from "react-dom";
+import md from "../../../posts/batch.md";
 
 const modes = { BATCH: "BATCH", FLUSH: "FLUSH" };
 
@@ -65,6 +66,12 @@ const BatchContent = () => {
       <button onClick={handleChangeMode} className="btn change">
         Change Mode (Current Mode : {mode})
       </button>
+
+      <div
+        dangerouslySetInnerHTML={{
+          __html: md,
+        }}
+      ></div>
     </>
   );
 };

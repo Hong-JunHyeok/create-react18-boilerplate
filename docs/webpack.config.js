@@ -1,7 +1,8 @@
-const path = require("path");
-const HTMLWebpackPlugin = require("html-webpack-plugin");
+import path from "path";
+import HTMLWebpackPlugin from "html-webpack-plugin";
+import RemarkHTML from "remark-html";
 
-module.exports = {
+export default {
   name: "React-18_Boiler-Plate",
   mode: "development",
   entry: "./src/index.jsx",
@@ -44,6 +45,11 @@ module.exports = {
           },
           {
             loader: "markdown-loader",
+            options: {
+              remarkOptions: {
+                plugins: [RemarkHTML],
+              },
+            },
           },
         ],
       },
@@ -59,7 +65,7 @@ module.exports = {
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, "public"),
+      directory: path.join(path.resolve(), "public"),
     },
     compress: true,
     port: 3080,

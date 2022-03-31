@@ -1,5 +1,4 @@
 import { fetchData } from "../Utils/Api";
-import { useState } from "react";
 
 const resource = fetchData();
 const Fake = () => {

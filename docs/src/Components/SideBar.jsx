@@ -5,6 +5,9 @@ const SideBar = () => {
     <section className="side_bar">
       <ul>
         <li>
+          <NavItem to="">시작하기</NavItem>
+        </li>
+        <li>
           <NavItem to="batch">Batch</NavItem>
         </li>
         <li>

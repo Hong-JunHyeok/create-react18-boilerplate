@@ -1,13 +1,13 @@
 import { fetchData } from "../Utils/Api";
+import { useState } from "react";
 
 const resource = fetchData();
-
 const Fake = () => {
   resource.fake.read();
 
   return (
     <>
-      <h1>Success</h1>
+      <h1>Component was successfully loaded</h1>
     </>
   );
 };

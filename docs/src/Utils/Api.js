@@ -23,18 +23,19 @@ const wrapPromise = (promise) => {
       result = response;
     },
     (error) => {
-      status = "rejected";
+      status = "error";
       result = error;
     }
   );
 
   return {
     read() {
+      console.log(status);
       if (status === "pending") {
         throw suspender;
       } else if (status === "success") {
         return result;
-      } else if (status === "rejected") {
+      } else if (status === "error") {
         throw result;
       }
     },
@@ -59,7 +60,7 @@ const fetchFake = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (Math.round(Math.random()) === 0) resolve(true);
-      else reject(false);
-    }, 2000);
-  });
+      else return reject(false);
+    }, 1500);
+  }).then((response) => response);
 };

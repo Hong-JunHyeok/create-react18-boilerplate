@@ -98,6 +98,55 @@ body {
   left: 0;
 }
 
+.box-container {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.head {
+  padding: 1rem 0.3rem;
+  display: flex;
+  background-color: var(--main-bg-color);
+  color: var(--main-pr-color);
+  font-size: var(--content-font-size-big);
+  font-weight: bold;
+}
+
+.head > .name {
+  flex: 1;
+}
+
+.body {
+  padding: 1rem 0.3rem;
+  display: flex;
+  background-color: var(--main-bg-gray);
+  font-size: var(--content-font-size-middle);
+}
+
+.body > .value {
+  flex: 1;
+}
+
+.btn {
+  border: none;
+  color: var(--content-text-color);
+  padding: 0.6rem 0.8rem;
+  display: inline-block;
+  font-size: 16px;
+  background-color: rgb(97, 218, 251);
+  padding: 10px 25px;
+  white-space: nowrap;
+  transition: background-color 0.2s ease-out 0s;
+  cursor: pointer;
+}
+
+.change {
+  position: absolute;
+  left: 50%;
+  margin-top: 1rem;
+}
+
 .content {
   flex-wrap: wrap;
   word-break: break-all;

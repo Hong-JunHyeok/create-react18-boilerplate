@@ -1,0 +1,21 @@
+.loader-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-icon > svg {
+  animation: rotate_image 4s linear infinite;
+  transform-origin: 50% 50%;
+}
+.loader-icon > p {
+  letter-spacing: 10px;
+  font-weight: bold;
+}
+
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -50,22 +50,19 @@ const BatchContent = () => {
         이벤트 핸들러 내에서만 일괄처리(Batch)되던 setState가 이제는 모든
         코드에서 적용됩니다.
       </h2>
-      <table border="1">
-        <thead>
-          <tr>
-            <td>Number</td>
-            <td>Flag</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{number}</td>
-            <td>{flag ? "true" : "false"}</td>
-          </tr>
-        </tbody>
-      </table>
 
-      <button onClick={handleChangeMode}>
+      <div className="box-container">
+        <div className="head">
+          <div className="name">Number</div>
+          <div className="name">Flag</div>
+        </div>
+        <div className="body">
+          <div className="value">{number}</div>
+          <div className="value">{flag ? "true" : "false"}</div>
+        </div>
+      </div>
+
+      <button onClick={handleChangeMode} className="btn change">
         Change Mode (Current Mode : {mode})
       </button>
     </>

@@ -1,8 +1,11 @@
 import { Suspense } from "react";
 import Fake from "../Fake";
 import ErrorBoundary from "../ErrorBoundary";
+import SectionSpinner from "../Loader/SectionSpinner";
+import { useNavigate } from "react-router-dom";
 
 const SuspenseContent = () => {
+  const navigate = useNavigate();
   return (
     <>
       <h1 className="post_title">개선된 기능 : Suspense</h1>
@@ -14,11 +17,14 @@ const SuspenseContent = () => {
         있습니다.
       </h2>
 
-      <ErrorBoundary>
-        <Suspense fallback={<>Loading</>}>
+      <Suspense fallback={<SectionSpinner />}>
+        <ErrorBoundary>
           <Fake />
-        </Suspense>
-      </ErrorBoundary>
+        </ErrorBoundary>
+        <button onClick={() => navigate(0)} className="btn">
+          Reload
+        </button>
+      </Suspense>
     </>
   );
 };

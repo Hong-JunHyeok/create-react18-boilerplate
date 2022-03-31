@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const SuspenseContent = () => {
   const navigate = useNavigate();
+
   return (
     <>
       <h1 className="post_title">개선된 기능 : Suspense</h1>

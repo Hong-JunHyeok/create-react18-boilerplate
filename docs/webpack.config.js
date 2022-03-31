@@ -1,6 +1,7 @@
 import path from "path";
 import HTMLWebpackPlugin from "html-webpack-plugin";
 import RemarkHTML from "remark-html";
+import RemarkFrontmatter from "remark-frontmatter";
 
 export default {
   name: "React-18_Boiler-Plate",
@@ -47,7 +48,7 @@ export default {
             loader: "markdown-loader",
             options: {
               remarkOptions: {
-                plugins: [RemarkHTML],
+                plugins: [RemarkFrontmatter, RemarkHTML],
               },
             },
           },

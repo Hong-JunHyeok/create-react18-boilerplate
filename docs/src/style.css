@@ -58,6 +58,16 @@ h3 {
   font-weight: bold;
 }
 
+pre > code,
+pre {
+  background: rgb(40, 44, 52);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: auto;
+  tab-size: 1.5em;
+  font-size: 1rem;
+}
+
 .title {
   margin: 0;
   height: 100%;

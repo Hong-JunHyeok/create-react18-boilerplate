@@ -1,6 +1,6 @@
-import md from "../../../posts/welcome.md";
+import md from "../../../posts/startTransition.md";
 
-const Welcome = () => {
+const Transition = () => {
   return (
     <>
       <div
@@ -12,4 +12,4 @@ const Welcome = () => {
   );
 };
 
-export default Welcome;
+export default Transition;

@@ -3,6 +3,7 @@ import Fake from "../Fake";
 import ErrorBoundary from "../ErrorBoundary";
 import SectionSpinner from "../Loader/SectionSpinner";
 import { useNavigate } from "react-router-dom";
+import md from "../../../posts/suspense.md";
 
 const SuspenseContent = () => {
   const navigate = useNavigate();
@@ -23,9 +24,15 @@ const SuspenseContent = () => {
           <Fake />
         </ErrorBoundary>
         <button onClick={() => navigate(0)} className="btn">
-          Reload
+          새로고침
         </button>
       </Suspense>
+
+      <div
+        dangerouslySetInnerHTML={{
+          __html: md,
+        }}
+      ></div>
     </>
   );
 };

@@ -64,7 +64,7 @@ const BatchContent = () => {
       </div>
 
       <button onClick={handleChangeMode} className="btn change">
-        Change Mode (Current Mode : {mode})
+        모드 변경 (현재 모드 : {mode})
       </button>
 
       <div

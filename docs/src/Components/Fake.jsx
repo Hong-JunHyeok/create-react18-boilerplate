@@ -7,7 +7,7 @@ const Fake = () => {
   return (
     <>
       <h3 className="suspense_block success">
-        Component was successfully loaded
+        컴포넌트가 성공적으로 렌더링 되었습니다.
       </h3>
     </>
   );

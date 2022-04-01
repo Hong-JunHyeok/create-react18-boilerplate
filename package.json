@@ -34,6 +34,13 @@
     "create-flex-plugin": "^4.3.4"
   },
   "dependencies": {
-    "esm": "^3.2.25"
+    "arg": "^5.0.1",
+    "chalk": "^2.4.1",
+    "esm": "^3.2.25",
+    "execa": "^6.1.0",
+    "inquirer": "^8.2.2",
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "pkg-install": "^1.0.0"
   }
 }

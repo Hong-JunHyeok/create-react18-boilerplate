@@ -17,7 +17,13 @@ const SideBar = () => {
           <NavItem to="transition">Transition</NavItem>
         </li>
         <li>
-          <NavItem to="working">🚧 작업중...</NavItem>
+          <NavItem to="rendering">새로운 클라이언트 및 서버 렌더링 API</NavItem>
+        </li>
+        <li>
+          <NavItem to="strictmode">🚧 작업중 (새로운 Strict Mode동작)</NavItem>
+        </li>
+        <li>
+          <NavItem to="newhooks">🚧 작업중 (새로운 Hooks)</NavItem>
         </li>
       </ul>
     </section>

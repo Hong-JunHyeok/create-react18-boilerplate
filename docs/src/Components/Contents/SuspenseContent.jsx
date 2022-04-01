@@ -1,8 +1,8 @@
 import { Suspense } from "react";
+import { useNavigate } from "react-router-dom";
 import Fake from "../Fake";
 import ErrorBoundary from "../ErrorBoundary";
 import SectionSpinner from "../Loader/SectionSpinner";
-import { useNavigate } from "react-router-dom";
 import md from "../../../posts/suspense.md";
 
 const SuspenseContent = () => {
@@ -27,6 +27,17 @@ const SuspenseContent = () => {
           새로고침
         </button>
       </Suspense>
+
+      <p>
+        <b>위 예제의 코드는 </b>
+        <a
+          href="https://gist.github.com/731704791aed0e4e29057cfe36e0c667.git"
+          target="_blank"
+        >
+          여기
+        </a>
+        <b>를 참고해주세요.</b>
+      </p>
 
       <div
         dangerouslySetInnerHTML={{

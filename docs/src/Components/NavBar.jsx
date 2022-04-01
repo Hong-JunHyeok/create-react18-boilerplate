@@ -7,7 +7,9 @@ const NavBar = () => {
       <span className="title">
         <ReactIcon />
         <h1>
-          <Link to="">React 18 BoilerPlate</Link>
+          <Link to="" className="link">
+            React 18 BoilerPlate
+          </Link>
         </h1>
       </span>
     </header>

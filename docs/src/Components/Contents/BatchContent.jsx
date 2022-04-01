@@ -46,12 +46,10 @@ const BatchContent = () => {
   return (
     <>
       <h1 className="post_title">새로운 기능 : 자동 일괄처리</h1>
-
       <h2 className="post_subtitle">
         이벤트 핸들러 내에서만 일괄처리(Batch)되던 setState가 이제는 모든
         코드에서 적용됩니다.
       </h2>
-
       <div className="box-container">
         <div className="head">
           <div className="name">Number</div>
@@ -62,11 +60,19 @@ const BatchContent = () => {
           <div className="value">{flag ? "True" : "False"}</div>
         </div>
       </div>
-
       <button onClick={handleChangeMode} className="btn change">
         모드 변경 (현재 모드 : {mode})
       </button>
-
+      <p>
+        <b>위 예제의 코드는 </b>
+        <a
+          href="https://gist.github.com/4468f16d1b59971890b54409fac1cd58.git"
+          target="_blank"
+        >
+          여기
+        </a>
+        <b>를 참고해주세요.</b>
+      </p>
       <div
         dangerouslySetInnerHTML={{
           __html: md,

@@ -5,7 +5,7 @@ const NavItem = ({ to, children }) => {
     <NavLink
       to={to}
       className={({ isActive }) =>
-        isActive ? `nav_link activated` : `nav_link`
+        isActive ? `nav_link activated link` : `nav_link link`
       }
     >
       {children}

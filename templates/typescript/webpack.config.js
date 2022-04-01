@@ -7,7 +7,7 @@ module.exports = {
   mode: "development",
   entry: "./src/index.tsx",
   output: {
-    filename: "bundle.[hash].js",
+    filename: "bundle.[chunkhash].js",
     path: path.resolve("dist"),
     publicPath: "/",
   },
@@ -36,7 +36,7 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              name: "images/[name].[ext]?[hash]",
+              name: "images/[name].[ext]?[chunkhash]",
             },
           },
         ],
@@ -54,6 +54,7 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: "./public/index.html",
     }),
+    new ForkTsCheckerWebpackPlugin(),
   ],
   devServer: {
     static: {

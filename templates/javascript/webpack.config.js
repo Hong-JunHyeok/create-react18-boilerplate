@@ -6,7 +6,7 @@ module.exports = {
   mode: "development",
   entry: "./src/index.jsx",
   output: {
-    filename: "bundle.[hash].js",
+    filename: "bundle.[chunkhash].js",
     path: path.resolve("dist"),
     publicPath: "/",
   },
@@ -27,7 +27,7 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              name: "images/[name].[ext]?[hash]",
+              name: "images/[name].[ext]?[chunkhash]",
             },
           },
         ],
@@ -52,5 +52,6 @@ module.exports = {
     },
     compress: true,
     port: 3080,
+    open: true,
   },
 };

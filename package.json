@@ -30,6 +30,11 @@
     "url": "https://github.com/Hong-JunHyeok/react18-boilerplate/issues"
   },
   "homepage": "https://github.com/Hong-JunHyeok/react18-boilerplate#readme",
+  "files": [
+    "bin/",
+    "src/",
+    "templates/"
+  ],
   "devDependencies": {
     "create-flex-plugin": "^4.3.4"
   },

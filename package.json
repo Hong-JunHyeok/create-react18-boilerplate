@@ -24,8 +24,12 @@
     "cli",
     "create-react18-boilerplate"
   ],
-  "author": "Hong-JunHyeok <edb1631@naver.com>",
-  "license": "ISC",
+  "author": {
+    "name": "Hong-JunHyeok",
+    "email": "edb1631@naver.com",
+    "url": "https://github.com/Hong-JunHyeok"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Hong-JunHyeok/react18-boilerplate/issues"
   },

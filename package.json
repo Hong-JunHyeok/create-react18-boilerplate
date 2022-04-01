@@ -1,0 +1,39 @@
+{
+  "name": "create-react18-boilerplate",
+  "version": "1.0.0",
+  "description": "Build the smallest React18 application.",
+  "main": "src/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "bin": {
+    "create-react18-boilerplate": "bin/create-project",
+    "create-project": "bin/create-project"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hong-JunHyeok/react18-boilerplate.git"
+  },
+  "keywords": [
+    "cli",
+    "create-react18-boilerplate"
+  ],
+  "author": "Hong-JunHyeok <edb1631@naver.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hong-JunHyeok/react18-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Hong-JunHyeok/react18-boilerplate#readme",
+  "devDependencies": {
+    "create-flex-plugin": "^4.3.4"
+  },
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}

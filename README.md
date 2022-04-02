@@ -14,12 +14,21 @@
 React 18 Boilerplate provides a CLI for building apps.
 
 ```shell
-# Install Package
-npm i create-react18-boilerplate
+# When using NPM
+npm install -g create-react18-boilerplate
+# When using yarn
+yarn global add create-react18-boilerplate
 ```
 
+You can run a script with npx
+
 ```shell
-# Create App
+npx create-react18-boilerplate
+```
+
+# Usage
+
+```shell
 mkdir [project_name]
 cd [project_name]
 create-react18-boilerplate # Create a project when entering a command

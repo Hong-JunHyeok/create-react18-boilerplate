@@ -45,7 +45,7 @@ const BatchContent = () => {
 
   return (
     <>
-      <h1 className="post_title">새로운 기능 : 자동 일괄처리</h1>
+      <h1 className="post_title">자동 일괄처리</h1>
       <h2 className="post_subtitle">
         이벤트 핸들러 내에서만 일괄처리(Batch)되던 setState가 이제는 모든
         코드에서 적용됩니다.

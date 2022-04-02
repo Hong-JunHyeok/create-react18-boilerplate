@@ -31,24 +31,8 @@ class App extends React.Component {
                 <Route path="suspense" element={<SuspenseContent />} />
                 <Route path="transition" element={<Transition />} />
                 <Route path="rendering" element={<RenderingAPIContent />} />
-                <Route
-                  path="strictmode"
-                  element={
-                    <>
-                      <StrictModeContent />
-                      <WorkingContent />
-                    </>
-                  }
-                />
-                <Route
-                  path="newhooks"
-                  element={
-                    <>
-                      <HooksContent />
-                      <WorkingContent />
-                    </>
-                  }
-                />
+                <Route path="strictmode" element={<StrictModeContent />} />
+                <Route path="newhooks" element={<HooksContent />} />
                 <Route path="working" element={<WorkingContent />} />
                 <Route path="*" element={<>Not Found</>} />
               </Routes>

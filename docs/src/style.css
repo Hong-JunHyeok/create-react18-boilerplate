@@ -84,6 +84,18 @@ pre {
   font-size: 1rem;
 }
 
+blockquote {
+  background-color: rgba(255, 229, 100, 0.3);
+  border-left-color: #ffe564;
+  border-left-width: 9px;
+  border-left-style: solid;
+  padding: 20px 45px 20px 26px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
 .title {
   margin: 0;
   height: 100%;

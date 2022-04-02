@@ -56,6 +56,36 @@ export async function createProject(options) {
   ]);
 
   await tasks.run();
-  console.log("%s Project ready", chalk.green.bold("DONE"));
+
+  options.packageManager.toLowerCase() === "npm" ? npmBuildScripts(options) : yarnBuildScripts(options);
+
   return true;
+}
+
+function npmBuildScripts(options) {
+  console.log("%s Project ready", chalk.green.bold("DONE"));
+  console.log(`Success! Created Project at ${options.targetDirectory}`);
+  console.log(`${chalk.cyan("You can run several commands: ")}`);
+
+  console.log(`
+  ${chalk.cyan("npm run dev")}
+    Starts the development server.
+
+  ${chalk.cyan("npm run build")}
+    Bundles the app into static files for production.
+  `);
+}
+
+function yarnBuildScripts(options) {
+  console.log("%s Project ready", chalk.green.bold("DONE"));
+  console.log(`Success! Created Project at ${options.targetDirectory}`);
+  console.log(`${chalk.cyan("You can run several commands: ")}`);
+
+  console.log(`
+  ${chalk.cyan("yarn dev")}
+    Starts the development server.
+
+  ${chalk.cyan("yarn run build")}
+    Bundles the app into static files for production.
+  `);
 }

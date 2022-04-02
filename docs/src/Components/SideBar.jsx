@@ -8,6 +8,9 @@ const SideBar = () => {
           <NavItem to="">시작하기</NavItem>
         </li>
         <li>
+          <NavItem to="installation">어떻게 시작하나요?</NavItem>
+        </li>
+        <li>
           <NavItem to="batch">Automatic Batch</NavItem>
         </li>
         <li>
@@ -20,10 +23,10 @@ const SideBar = () => {
           <NavItem to="rendering">새로운 클라이언트 및 서버 렌더링 API</NavItem>
         </li>
         <li>
-          <NavItem to="strictmode">🚧 작업중 (새로운 Strict Mode동작)</NavItem>
+          <NavItem to="strictmode">새로운 Strict Mode동작</NavItem>
         </li>
         <li>
-          <NavItem to="newhooks">🚧 작업중 (새로운 Hooks)</NavItem>
+          <NavItem to="newhooks">새로운 Hooks</NavItem>
         </li>
       </ul>
     </section>

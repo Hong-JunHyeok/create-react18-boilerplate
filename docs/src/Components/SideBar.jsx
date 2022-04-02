@@ -8,6 +8,9 @@ const SideBar = () => {
           <NavItem to="">시작하기</NavItem>
         </li>
         <li>
+          <NavItem to="installation">어떻게 시작하나요?</NavItem>
+        </li>
+        <li>
           <NavItem to="batch">Automatic Batch</NavItem>
         </li>
         <li>

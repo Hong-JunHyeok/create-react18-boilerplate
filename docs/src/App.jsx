@@ -15,6 +15,7 @@ import RenderingAPIContent from "./Components/Contents/RenderingAPIContent";
 import StrictModeContent from "./Components/Contents/StrictModeContent";
 import HooksContent from "./Components/Contents/HooksContent";
 import Welcome from "./Components/Contents/Welcome";
+import InstallationContent from "./Components/Contents/InstallationContent";
 
 class App extends React.Component {
   render() {
@@ -33,6 +34,7 @@ class App extends React.Component {
                 <Route path="rendering" element={<RenderingAPIContent />} />
                 <Route path="strictmode" element={<StrictModeContent />} />
                 <Route path="newhooks" element={<HooksContent />} />
+                <Route path="installation" element={<InstallationContent />} />
                 <Route path="working" element={<WorkingContent />} />
                 <Route path="*" element={<>Not Found</>} />
               </Routes>

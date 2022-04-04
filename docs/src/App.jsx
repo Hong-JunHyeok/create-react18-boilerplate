@@ -6,16 +6,7 @@ import Layout from "./Components/Layout";
 import NavBar from "./Components/NavBar";
 import SideBar from "./Components/SideBar";
 import Content from "./Components/Content";
-
-import Transition from "./Components/Contents/Transition";
-import BatchContent from "./Components/Contents/BatchContent";
-import SuspenseContent from "./Components/Contents/SuspenseContent";
-import WorkingContent from "./Components/Contents/WorkingContent";
-import RenderingAPIContent from "./Components/Contents/RenderingAPIContent";
-import StrictModeContent from "./Components/Contents/StrictModeContent";
-import HooksContent from "./Components/Contents/HooksContent";
-import Welcome from "./Components/Contents/Welcome";
-import InstallationContent from "./Components/Contents/InstallationContent";
+import Posts from "./Components/Contents";
 
 class App extends React.Component {
   render() {
@@ -25,20 +16,31 @@ class App extends React.Component {
           <NavBar />
           <main className="main">
             <SideBar />
-            <Content>
-              <Routes>
-                <Route path="" element={<Welcome />} />
-                <Route path="batch" element={<BatchContent />} />
-                <Route path="suspense" element={<SuspenseContent />} />
-                <Route path="transition" element={<Transition />} />
-                <Route path="rendering" element={<RenderingAPIContent />} />
-                <Route path="strictmode" element={<StrictModeContent />} />
-                <Route path="newhooks" element={<HooksContent />} />
-                <Route path="installation" element={<InstallationContent />} />
-                <Route path="working" element={<WorkingContent />} />
-                <Route path="*" element={<>Not Found</>} />
-              </Routes>
-            </Content>
+            <Suspense>
+              <Content>
+                <Routes>
+                  <Route path="" element={<Posts.Welcome />} />
+                  <Route path="batch" element={<Posts.BatchContent />} />
+                  <Route path="suspense" element={<Posts.SuspenseContent />} />
+                  <Route path="transition" element={<Posts.Transition />} />
+                  <Route
+                    path="rendering"
+                    element={<Posts.RenderingAPIContent />}
+                  />
+                  <Route
+                    path="strictmode"
+                    element={<Posts.StrictModeContent />}
+                  />
+                  <Route path="newhooks" element={<Posts.HooksContent />} />
+                  <Route
+                    path="installation"
+                    element={<Posts.InstallationContent />}
+                  />
+                  <Route path="working" element={<Posts.WorkingContent />} />
+                  <Route path="*" element={<>Not Found</>} />
+                </Routes>
+              </Content>
+            </Suspense>
           </main>
         </Layout>
       </Suspense>

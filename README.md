@@ -1,5 +1,6 @@
-![](https://img.shields.io/badge/NPM-link-red)
-![](https://img.shields.io/badge/Docs-link-blue)
+[![NPM](https://img.shields.io/badge/NPM-link-red)](https://abit.ly/cli-npm-link)
+[![Docs](https://img.shields.io/badge/Docs-link-blue)](https://react18-boilerplate.vercel.app/)
+
 
 ![gradient (13)](https://user-images.githubusercontent.com/48292190/161219484-1b1ef1c7-0933-4a9d-8e98-64d759f2ba15.png)
 
